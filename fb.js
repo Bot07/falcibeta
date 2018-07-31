@@ -29,3 +29,4 @@ client.on("ready", () => {client.user.setGame('Yapım Aşamasında' , 'https://t
 
 
 }); 
+client.login(process.env.BOT_TOKEN)
