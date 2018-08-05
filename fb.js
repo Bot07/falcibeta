@@ -234,7 +234,7 @@ talkedRecently.add(msg.author.id);
 
 
 });
-const talkedRecently = new Set();
+
 client.on('message', msg => {
 
 
