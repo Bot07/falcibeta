@@ -168,7 +168,7 @@ msg.channel.send({embed: embed})
 
 talkedRecently.add(msg.author.id);
         setTimeout(() => {
-          // Removes the user from the set after a minute
+
           talkedRecently.delete(msg.author.id);
                     
         }, 7200000);
