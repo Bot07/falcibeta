@@ -142,9 +142,9 @@ msg.channel.send({embed: embed})
 });
 const talkedRecently = new Set();
 client.on('message', msg => {
-if (msg.content.toLowerCase() === prefix + "loto") { 
 
 
+if (msg.content.toLowerCase().match(/(fd!loto)/g)) {
             
 if (talkedRecently.has(msg.author.id)) {
              let embed = new Discord.RichEmbed() 
