@@ -68,23 +68,34 @@ client.on("ready", () => {client.user.setGame('fb!loto | Yapım Aşamasında' , 
 
 
 
+
+
+
+
+
+const talkedRecently = new Set();
+
 client.on('message', msg => {
 
 
 
 
 
+if (msg.content.toLowerCase().match(/(fb!loto-tahmini)/g)) {
 
+            
 
-if (msg.content.toLowerCase() === prefix + "loto-tahmin 837716834") { 
+if (talkedRecently.has(msg.author.id)) {
 
-
-
-let embed = new Discord.RichEmbed() 
+             let embed = new Discord.RichEmbed() 
 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 
-.setDescription("Kaybettiniz! Yarın tekrar deneyin!")
+              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
+
+       msg.channel.send({embed: embed})	
+
+      } else {
 
 
 
@@ -92,160 +103,45 @@ let embed = new Discord.RichEmbed()
 
 
 
-msg.channel.send({embed: embed})
+
+
+     let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 
 
 
+.addField("Kaybettiniz!",
 
+          "12 Saat sonra tekrar deneyin!")
+
+
+                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+
+msg.channel.send({embed: embed})	
+
+
+
+talkedRecently.add(msg.author.id);
+
+        setTimeout(() => {
+
+
+
+          talkedRecently.delete(msg.author.id);
+
+                    
+
+        }, 7200000);
+
+            
+
+    }
 
 
 
 } 
-
-
-
-
-
-
-
 });
-
-
-
-
-
-client.on('message', msg => {
-
-
-
-
-
-
-
-if (msg.content.toLowerCase() === prefix + "loto-tahmin 40865312") { 
-
-
-
-let embed = new Discord.RichEmbed()
-
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-
-.setDescription("Kaybettiniz! Yarın tekrar deneyin!")
-
-
-
-
-
-
-
-msg.channel.send({embed: embed})
-
-
-
-
-
-
-
-} 
-
-
-
-
-
-
-
-});
-
-client.on('message', msg => {
-
-
-
-
-
-
-
-if (msg.content.toLowerCase() === prefix + "loto-tahmin 301095132") { 
-
-
-
-let embed = new Discord.RichEmbed() 
-
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-
-.setDescription("Kaybettiniz! Yarın tekrar deneyin!")
-
-
-
-
-
-
-
-msg.channel.send({embed: embed})
-
-
-
-
-
-
-
-} 
-
-
-
-
-
-
-
-});
-
-client.on('message', msg => {
-
-
-
-
-
-
-
-if (msg.content.toLowerCase() === prefix + "loto-tahmin 857869261") { 
-
-
-
-let embed = new Discord.RichEmbed() 
-
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-
-.setDescription("Kaybettiniz! Yarın tekrar deneyin!")
-
-
-
-
-
-
-
-msg.channel.send({embed: embed})
-
-
-
-
-
-
-
-} 
-
-
-
-
-
-});
-
-client.on('message', msg => {
-
-
-
-
-
-
-
 if (msg.content.toLowerCase() === prefix + "loto-tahmin 316262469") { 
 
 
