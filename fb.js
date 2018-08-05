@@ -141,7 +141,28 @@ msg.channel.send({embed: embed})
 
 });
 
+client.on('message', msg => {
 
+
+
+if (msg.content.toLowerCase() === prefix + "loto") { 
+
+
+let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+.addField("Loto Tercihinizi Yapın:",
+          "1. 837716834 \n2. 40865312 \n3. 316262469 \n4. 301095132 \n5. 857869261")
+  .setDescription("Tahmininizi fb!loto-tahmini 'tahmin' şeklinde yazın. Loto her gün güncellenir. Günde 1 tahmin yapınız.")
+                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+msg.channel.send({embed: embed})	
+
+
+} 
+
+
+
+});
 
 
 client.login(process.env.BOT_TOKEN)
