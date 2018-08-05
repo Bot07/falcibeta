@@ -57,7 +57,7 @@ if (talkedRecently.has(msg.author.id)) {
 .addField("Kaybettiniz!",
           "12 Saat sonra tekrar deneyin!")
 
-                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+                
 msg.channel.send({embed: embed})	
 
 talkedRecently.add(msg.author.id);
@@ -97,7 +97,7 @@ if (talkedRecently.has(msg.author.id)) {
 .addField("Kaybettiniz!",
           "12 Saat sonra tekrar deneyin!")
 
-                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+                
 msg.channel.send({embed: embed})	
 
 talkedRecently.add(msg.author.id);
@@ -137,7 +137,7 @@ if (talkedRecently.has(msg.author.id)) {
 .addField("Tebrikler",
           "Günün kazananlarındansınız!")
 
-                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+               
 msg.channel.send({embed: embed})	
 
 talkedRecently.add(msg.author.id);
@@ -177,7 +177,7 @@ if (talkedRecently.has(msg.author.id)) {
 .addField("Kaybettiniz!",
           "12 Saat sonra tekrar deneyin!")
 
-                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+                
 msg.channel.send({embed: embed})	
 
 talkedRecently.add(msg.author.id);
@@ -217,7 +217,7 @@ if (talkedRecently.has(msg.author.id)) {
 .addField("Kaybettiniz!",
           "12 Saat sonra tekrar deneyin!")
 
-                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+                
 msg.channel.send({embed: embed})	
 
 talkedRecently.add(msg.author.id);
