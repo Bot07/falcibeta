@@ -142,8 +142,9 @@ msg.channel.send({embed: embed})
 });
 const talkedRecently = new Set();
 client.on('message', msg => {
-if (talkedRecently.has(msg.author.id)) {
             if (msg.content.toLowerCase() === prefix + "loto") { 
+if (talkedRecently.has(msg.author.id)) {
+            
             msg.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
        
             
