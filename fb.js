@@ -38,7 +38,7 @@ if (msg.content.toLowerCase() === prefix + "loto") {
 
 
 let embed = new Discord.RichEmbed() 
-
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 
 .addField("Loto Tercihinizi Yapın:"
           "1. 837716834 \n2. 40865312 \n3. 316262469 \n4. 301095132 \n5. 857869261")
@@ -61,6 +61,7 @@ client.on('message', msg => {
 if (msg.content.toLowerCase() === prefix + "loto-tahmin 837716834") { 
 
 let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 .setDescription("Kaybettiniz! Yarın tekrar deneyin!")
 
 
@@ -82,7 +83,8 @@ client.on('message', msg => {
 
 if (msg.content.toLowerCase() === prefix + "loto-tahmin 40865312") { 
 
-let embed = new Discord.RichEmbed() 
+let embed = new Discord.RichEmbed()
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 .setDescription("Kaybettiniz! Yarın tekrar deneyin!")
 
 
@@ -103,6 +105,7 @@ client.on('message', msg => {
 if (msg.content.toLowerCase() === prefix + "loto-tahmin 301095132") { 
 
 let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 .setDescription("Kaybettiniz! Yarın tekrar deneyin!")
 
 
@@ -123,6 +126,7 @@ client.on('message', msg => {
 if (msg.content.toLowerCase() === prefix + "loto-tahmin 857869261") { 
 
 let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 .setDescription("Kaybettiniz! Yarın tekrar deneyin!")
 
 
@@ -142,6 +146,7 @@ client.on('message', msg => {
 if (msg.content.toLowerCase() === prefix + "loto-tahmin 316262469") { 
 
 let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 .setDescription("Tebrikler! Günün loto kazananlarındansınız!")
 
 
