@@ -34,106 +34,200 @@ client.on("ready", () => {client.user.setGame('fb!loto | Yapım Aşamasında' , 
 
 
 
+const talkedRecently = new Set();
 client.on('message', msg => {
 
 
-
-if (msg.content.toLowerCase() === prefix + "loto-tahmin 837716834") { 
-
-let embed = new Discord.RichEmbed() 
+if (msg.content.toLowerCase().match(/(fb!loto-tahmin 1)/g)) {
+            
+if (talkedRecently.has(msg.author.id)) {
+             let embed = new Discord.RichEmbed() 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-.setDescription("Kaybettiniz! Yarın tekrar deneyin!")
+              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
+       msg.channel.send({embed: embed})	
+            
+    } else {
 
 
 
-msg.channel.send({embed: embed})
 
+     let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 
+.addField("Kaybettiniz!",
+          "12 Saat sonra tekrar deneyin!")
+
+                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+msg.channel.send({embed: embed})	
+
+talkedRecently.add(msg.author.id);
+        setTimeout(() => {
+
+          talkedRecently.delete(msg.author.id);
+                    
+        }, 7200000);
+            
+    }
 
 } 
 
 
 
 });
-
-
+const talkedRecently = new Set();
 client.on('message', msg => {
 
 
-
-if (msg.content.toLowerCase() === prefix + "loto-tahmin 40865312") { 
-
-let embed = new Discord.RichEmbed()
+if (msg.content.toLowerCase().match(/(fb!loto-tahmin 2)/g)) {
+            
+if (talkedRecently.has(msg.author.id)) {
+             let embed = new Discord.RichEmbed() 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-.setDescription("Kaybettiniz! Yarın tekrar deneyin!")
+              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
+       msg.channel.send({embed: embed})	
+            
+    } else {
 
 
 
-msg.channel.send({embed: embed})
 
+     let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 
+.addField("Kaybettiniz!",
+          "12 Saat sonra tekrar deneyin!")
+
+                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+msg.channel.send({embed: embed})	
+
+talkedRecently.add(msg.author.id);
+        setTimeout(() => {
+
+          talkedRecently.delete(msg.author.id);
+                    
+        }, 7200000);
+            
+    }
 
 } 
 
 
 
 });
+const talkedRecently = new Set();
 client.on('message', msg => {
 
 
-
-if (msg.content.toLowerCase() === prefix + "loto-tahmin 301095132") { 
-
-let embed = new Discord.RichEmbed() 
+if (msg.content.toLowerCase().match(/(fb!loto-tahmin 3)/g)) {
+            
+if (talkedRecently.has(msg.author.id)) {
+             let embed = new Discord.RichEmbed() 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-.setDescription("Kaybettiniz! Yarın tekrar deneyin!")
+              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
+       msg.channel.send({embed: embed})	
+            
+    } else {
 
 
 
-msg.channel.send({embed: embed})
 
+     let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 
+.addField("Tebrikler",
+          "Günün kazananlarındansınız!")
+
+                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+msg.channel.send({embed: embed})	
+
+talkedRecently.add(msg.author.id);
+        setTimeout(() => {
+
+          talkedRecently.delete(msg.author.id);
+                    
+        }, 7200000);
+            
+    }
 
 } 
 
 
 
 });
+const talkedRecently = new Set();
 client.on('message', msg => {
 
 
-
-if (msg.content.toLowerCase() === prefix + "loto-tahmin 857869261") { 
-
-let embed = new Discord.RichEmbed() 
+if (msg.content.toLowerCase().match(/(fb!loto-tahmin 4)/g)) {
+            
+if (talkedRecently.has(msg.author.id)) {
+             let embed = new Discord.RichEmbed() 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-.setDescription("Kaybettiniz! Yarın tekrar deneyin!")
+              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
+       msg.channel.send({embed: embed})	
+            
+    } else {
 
 
 
-msg.channel.send({embed: embed})
 
+     let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 
+.addField("Kaybettiniz!",
+          "12 Saat sonra tekrar deneyin!")
+
+                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+msg.channel.send({embed: embed})	
+
+talkedRecently.add(msg.author.id);
+        setTimeout(() => {
+
+          talkedRecently.delete(msg.author.id);
+                    
+        }, 7200000);
+            
+    }
 
 } 
 
 
+
 });
+const talkedRecently = new Set();
 client.on('message', msg => {
 
 
-
-if (msg.content.toLowerCase() === prefix + "loto-tahmin 316262469") { 
-
-let embed = new Discord.RichEmbed() 
+if (msg.content.toLowerCase().match(/(fb!loto-tahmin 5)/g)) {
+            
+if (talkedRecently.has(msg.author.id)) {
+             let embed = new Discord.RichEmbed() 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-.setDescription("Tebrikler! Günün loto kazananlarındansınız!")
+              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
+       msg.channel.send({embed: embed})	
+            
+    } else {
 
 
 
-msg.channel.send({embed: embed})
 
+     let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 
+.addField("Kaybettiniz!",
+          "12 Saat sonra tekrar deneyin!")
+
+                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+msg.channel.send({embed: embed})	
+
+talkedRecently.add(msg.author.id);
+        setTimeout(() => {
+
+          talkedRecently.delete(msg.author.id);
+                    
+        }, 7200000);
+            
+    }
 
 } 
 
@@ -162,7 +256,7 @@ if (talkedRecently.has(msg.author.id)) {
 
 .addField("Loto Tercihinizi Yapın:",
           "1. 837716834 \n2. 40865312 \n3. 316262469 \n4. 301095132 \n5. 857869261")
-  .setDescription("Tahmininizi fb!loto-tahmini 'tahmin' şeklinde yazın. Loto her gün güncellenir. Günde 1 tahmin yapınız.")
+  .setDescription("Tahmininizi fb!loto-tahmin 'tahmin ettiğiniz numaranın sayısı' şeklinde yazın (Örneğin fb!loto-tahmin 5). Loto her gün güncellenir. Günde 1 tahmin yapınız.")
                 .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
 msg.channel.send({embed: embed})	
 
