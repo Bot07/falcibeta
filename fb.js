@@ -140,9 +140,11 @@ msg.channel.send({embed: embed})
 
 
 });
-const talkedRecently = new Set();
 client.on('message', msg => {
-            if (msg.content.toLowerCase() === prefix + "loto") { 
+if (msg.content.toLowerCase() === prefix + "loto") { 
+const talkedRecently = new Set();
+
+            
 if (talkedRecently.has(msg.author.id)) {
             
             msg.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
@@ -151,7 +153,7 @@ if (talkedRecently.has(msg.author.id)) {
     } else {
 
 
-if (msg.content.toLowerCase() === prefix + "loto") { 
+
 
      let embed = new Discord.RichEmbed() 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
