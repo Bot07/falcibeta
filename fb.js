@@ -143,7 +143,15 @@ msg.channel.send({embed: embed})
 const talkedRecently = new Set();
 client.on('message', msg => {
 if (talkedRecently.has(msg.author.id)) {
-            let embed = new Discord.RichEmbed() 
+            msg.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
+       
+            
+    } else {
+
+
+if (msg.content.toLowerCase() === prefix + "loto") { 
+
+     let embed = new Discord.RichEmbed() 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 
 .addField("Loto Tercihinizi Yapın:",
@@ -151,13 +159,6 @@ if (talkedRecently.has(msg.author.id)) {
   .setDescription("Tahmininizi fb!loto-tahmini 'tahmin' şeklinde yazın. Loto her gün güncellenir. Günde 1 tahmin yapınız.")
                 .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
 msg.channel.send({embed: embed})	
-            
-    } else {
-
-
-if (msg.content.toLowerCase() === prefix + "loto") { 
-msg.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
-
 
 talkedRecently.add(msg.author.id);
         setTimeout(() => {
