@@ -238,15 +238,8 @@ const talkedRecently = new Set();
 client.on('message', msg => {
 
 
-if (msg.content.toLowerCase().match(/(fb!loto)/g)) {
-            
-if (talkedRecently.has(msg.author.id)) {
-             let embed = new Discord.RichEmbed() 
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
-       msg.channel.send({embed: embed})	
-            
-    } else {
+if(msg.content === prefix + 'loto') {
+           
 
 
 
@@ -260,14 +253,6 @@ if (talkedRecently.has(msg.author.id)) {
                 .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
 msg.channel.send({embed: embed})	
 
-talkedRecently.add(msg.author.id);
-        setTimeout(() => {
-
-          talkedRecently.delete(msg.author.id);
-                    
-        }, 7200000);
-            
-    }
 
 } 
 
