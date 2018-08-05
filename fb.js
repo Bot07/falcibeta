@@ -34,7 +34,7 @@ client.on('message', msg => {
 
 
 
-if (msg.content.toLowerCase() === prefix + `loto`) { 
+if (msg.content.toLowerCase() === prefix + "loto") { 
 
 
 let embed = new Discord.RichEmbed() 
@@ -58,7 +58,7 @@ client.on('message', msg => {
 
 
 
-if (msg.content.toLowerCase() === prefix + `loto-tahmin 837716834`) { 
+if (msg.content.toLowerCase() === prefix + "loto-tahmin 837716834") { 
 
 let embed = new Discord.RichEmbed() 
 .setDescription("Kaybettiniz! Yarın tekrar deneyin!")
@@ -80,7 +80,7 @@ client.on('message', msg => {
 
 
 
-if (msg.content.toLowerCase() === prefix + `loto-tahmin 40865312`) { 
+if (msg.content.toLowerCase() === prefix + "loto-tahmin 40865312") { 
 
 let embed = new Discord.RichEmbed() 
 .setDescription("Kaybettiniz! Yarın tekrar deneyin!")
@@ -100,7 +100,7 @@ client.on('message', msg => {
 
 
 
-if (msg.content.toLowerCase() === prefix + `loto-tahmin 301095132`) { 
+if (msg.content.toLowerCase() === prefix + "loto-tahmin 301095132") { 
 
 let embed = new Discord.RichEmbed() 
 .setDescription("Kaybettiniz! Yarın tekrar deneyin!")
@@ -120,7 +120,7 @@ client.on('message', msg => {
 
 
 
-if (msg.content.toLowerCase() === prefix + `loto-tahmin 857869261`) { 
+if (msg.content.toLowerCase() === prefix + "loto-tahmin 857869261") { 
 
 let embed = new Discord.RichEmbed() 
 .setDescription("Kaybettiniz! Yarın tekrar deneyin!")
@@ -139,7 +139,7 @@ client.on('message', msg => {
 
 
 
-if (msg.content.toLowerCase() === prefix + `loto-tahmin 316262469`) { 
+if (msg.content.toLowerCase() === prefix + "loto-tahmin 316262469") { 
 
 let embed = new Discord.RichEmbed() 
 .setDescription("Tebrikler! Günün loto kazananlarındansınız!")
