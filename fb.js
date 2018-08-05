@@ -24,7 +24,7 @@ var prefix = 'fb!'
 
 
 
-client.on("ready", () => {client.user.setGame('fd!loto | Yapım Aşamasında' , 'https://twitch.tv/FalcıBeta') 
+client.on("ready", () => {client.user.setGame('fb!loto | Yapım Aşamasında' , 'https://twitch.tv/FalcıBeta') 
 
 
 
@@ -144,7 +144,7 @@ const talkedRecently = new Set();
 client.on('message', msg => {
 
 
-if (msg.content.toLowerCase().match(/(fd!loto)/g)) {
+if (msg.content.toLowerCase().match(/(fb!loto)/g)) {
             
 if (talkedRecently.has(msg.author.id)) {
              let embed = new Discord.RichEmbed() 
