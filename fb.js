@@ -232,5 +232,4 @@ msg.channel.send({embed: embed})
 } 
 
 
-});
 client.login(process.env.BOT_TOKEN)
