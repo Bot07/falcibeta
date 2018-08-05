@@ -147,9 +147,10 @@ if (msg.content.toLowerCase() === prefix + "loto") {
 
             
 if (talkedRecently.has(msg.author.id)) {
-            
-            msg.channel.send("Bu komutu 12 saat sonra kullanabilirsin!");
-       
+             let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
+       msg.channel.send({embed: embed})	
             
     } else {
 
