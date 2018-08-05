@@ -158,9 +158,7 @@ client.on('message', msg => {
 
 
 
-
-
-if (msg.content.toLowerCase().match(/(fb!loto)/g)) {
+if(msg.content === prefix + 'loto') {
 
            
 
@@ -205,31 +203,7 @@ msg.channel.send({embed: embed})
 
 
 
-if (msg.content.toLowerCase() === prefix + "loto-tahmin 316262469") { 
 
-
-
-let embed = new Discord.RichEmbed() 
-
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-
-.setDescription("Tebrikler! Günün loto kazananlarındansınız!")
-
-
-
-
-
-
-
-msg.channel.send({embed: embed})
-
-
-
-
-
-
-
-} 
 
 
 client.login(process.env.BOT_TOKEN)
