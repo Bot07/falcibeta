@@ -142,31 +142,7 @@ talkedRecently.add(msg.author.id);
 
 } 
 });
-if (msg.content.toLowerCase() === prefix + "loto-tahmin 316262469") { 
 
-
-
-let embed = new Discord.RichEmbed() 
-
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-
-.setDescription("Tebrikler! Günün loto kazananlarındansınız!")
-
-
-
-
-
-
-
-msg.channel.send({embed: embed})
-
-
-
-
-
-
-
-} 
 
 
 
