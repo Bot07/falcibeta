@@ -162,10 +162,11 @@ talkedRecently.add(msg.author.id);
         setTimeout(() => {
           // Removes the user from the set after a minute
           talkedRecently.delete(msg.author.id);
+                    return;
         }, 60000);
             
     }
-return;
+
 } 
 
 
