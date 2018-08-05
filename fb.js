@@ -174,7 +174,7 @@ msg.channel.send({embed: embed})
 
 
 
-});
+
 
 const talkedRecently = new Set();
 
