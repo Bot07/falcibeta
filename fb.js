@@ -152,7 +152,7 @@ talkedRecently.add(msg.author.id);
 
 
 
-const talkedRecently = new Set();
+
 
 client.on('message', msg => {
 
@@ -162,23 +162,7 @@ client.on('message', msg => {
 
 if (msg.content.toLowerCase().match(/(fb!loto)/g)) {
 
-            
-
-if (talkedRecently.has(msg.author.id)) {
-
-             let embed = new Discord.RichEmbed() 
-
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-
-              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
-
-       msg.channel.send({embed: embed})	
-
-            
-
-    } else {
-
-
+           
 
 
 
@@ -202,27 +186,7 @@ if (talkedRecently.has(msg.author.id)) {
 
 msg.channel.send({embed: embed})	
 
-
-
-talkedRecently.add(msg.author.id);
-
-        setTimeout(() => {
-
-
-
-          talkedRecently.delete(msg.author.id);
-
-                    
-
-        }, 7200000);
-
-            
-
-    }
-
-
-
-} 
+}
 
 
 
@@ -241,7 +205,31 @@ talkedRecently.add(msg.author.id);
 
 
 
+if (msg.content.toLowerCase() === prefix + "loto-tahmin 316262469") { 
 
+
+
+let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+.setDescription("Tebrikler! Günün loto kazananlarındansınız!")
+
+
+
+
+
+
+
+msg.channel.send({embed: embed})
+
+
+
+
+
+
+
+} 
 
 
 
