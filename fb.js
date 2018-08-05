@@ -30,22 +30,24 @@ client.on("ready", () => {client.user.setGame('Yapım Aşamasında' , 'https://t
 
 }); 
 
+
+
+
+
 client.on('message', msg => {
 
 
 
-if (msg.content.toLowerCase() === prefix + "loto") { 
-
+if (msg.content.toLowerCase() === prefix + "loto-tahmin 837716834") { 
 
 let embed = new Discord.RichEmbed() 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+.setDescription("Kaybettiniz! Yarın tekrar deneyin!")
 
-.addField("Loto Tercihinizi Yapın:"
-          "1. 837716834 \n2. 40865312 \n3. 316262469 \n4. 301095132 \n5. 857869261")
-  .addField("Tahmininizi fb!loto-tahmini 'tahmin' şeklinde yazın.",
-  "Loto her gün güncellenir. Günde 1 tahmin yapınız.")
-                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
-msg.channel.send({embed: embed})	
+
+
+msg.channel.send({embed: embed})
+
 
 
 } 
@@ -55,8 +57,89 @@ msg.channel.send({embed: embed})
 });
 
 
+client.on('message', msg => {
 
 
+
+if (msg.content.toLowerCase() === prefix + "loto-tahmin 40865312") { 
+
+let embed = new Discord.RichEmbed()
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+.setDescription("Kaybettiniz! Yarın tekrar deneyin!")
+
+
+
+msg.channel.send({embed: embed})
+
+
+
+} 
+
+
+
+});
+client.on('message', msg => {
+
+
+
+if (msg.content.toLowerCase() === prefix + "loto-tahmin 301095132") { 
+
+let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+.setDescription("Kaybettiniz! Yarın tekrar deneyin!")
+
+
+
+msg.channel.send({embed: embed})
+
+
+
+} 
+
+
+
+});
+client.on('message', msg => {
+
+
+
+if (msg.content.toLowerCase() === prefix + "loto-tahmin 857869261") { 
+
+let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+.setDescription("Kaybettiniz! Yarın tekrar deneyin!")
+
+
+
+msg.channel.send({embed: embed})
+
+
+
+} 
+
+
+});
+client.on('message', msg => {
+
+
+
+if (msg.content.toLowerCase() === prefix + "loto-tahmin 316262469") { 
+
+let embed = new Discord.RichEmbed() 
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+.setDescription("Tebrikler! Günün loto kazananlarındansınız!")
+
+
+
+msg.channel.send({embed: embed})
+
+
+
+} 
+
+
+
+});
 
 
 
