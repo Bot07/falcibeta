@@ -24,7 +24,7 @@ var prefix = 'fb!'
 
 
 
-client.on("ready", () => {client.user.setGame('Yapım Aşamasında' , 'https://twitch.tv/FalcıBeta') 
+client.on("ready", () => {client.user.setGame('fd!loto | Yapım Aşamasında' , 'https://twitch.tv/FalcıBeta') 
 
 
 
