@@ -148,7 +148,7 @@ if (msg.content.toLowerCase() === prefix + "loto") {
             
 if (talkedRecently.has(msg.author.id)) {
             
-            msg.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
+            msg.channel.send("Bu komutu 12 saat sonra kullanabilirsin!");
        
             
     } else {
