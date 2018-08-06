@@ -427,7 +427,7 @@ client.on('message', msg => {
 if(msg.content === prefix + 'loto-tahmini 316262469') { 
 
 
-
+ msg.channel.bulkDelete(2)
 
 
 
@@ -588,7 +588,7 @@ msg.channel.send({embed: embed})
 
 
 
-msg.delete (msg.content == 'konuştur')
+
 
 
 
