@@ -14,6 +14,22 @@ const embed = require('discord.js');
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const Discord = require('discord.js'); 
 
 
@@ -30,7 +46,55 @@ const Discord = require('discord.js');
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const client = new Discord.Client(); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -94,7 +158,55 @@ var prefix = 'fb!'
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on("ready", () => {client.user.setGame('fb!loto | Yapım Aşamasında' , 'https://twitch.tv/FalcıBeta') 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -144,7 +256,45 @@ client.on("ready", () => {client.user.setGame('fb!loto | Yapım Aşamasında' , 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const talkedRecently = new Set();
+
+
+
+
 
 
 
@@ -160,7 +310,23 @@ client.on('message', msg => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 if (msg.content.toLowerCase().match(/(fb!loto-tahmini)/g)) {
+
+
+
+
 
 
 
@@ -168,7 +334,15 @@ if (msg.content.toLowerCase().match(/(fb!loto-tahmini)/g)) {
 
 
 
+
+
+
+
 if (talkedRecently.has(msg.author.id)) {
+
+
+
+
 
 
 
@@ -176,7 +350,15 @@ if (talkedRecently.has(msg.author.id)) {
 
 
 
+
+
+
+
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+
+
+
 
 
 
@@ -184,7 +366,15 @@ if (talkedRecently.has(msg.author.id)) {
 
 
 
+
+
+
+
        msg.channel.send({embed: embed})	
+
+
+
+
 
 
 
@@ -208,7 +398,31 @@ if (talkedRecently.has(msg.author.id)) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      let embed = new Discord.RichEmbed() 
+
+
+
+
 
 
 
@@ -220,7 +434,19 @@ if (talkedRecently.has(msg.author.id)) {
 
 
 
+
+
+
+
+
+
+
+
 .addField("Kaybettiniz!",
+
+
+
+
 
 
 
@@ -230,7 +456,17 @@ if (talkedRecently.has(msg.author.id)) {
 
 
 
+
+
+
+
+
+
                 .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+
+
+
+
 
 
 
@@ -242,7 +478,19 @@ msg.channel.send({embed: embed})
 
 
 
+
+
+
+
+
+
+
+
 talkedRecently.add(msg.author.id);
+
+
+
+
 
 
 
@@ -254,7 +502,19 @@ talkedRecently.add(msg.author.id);
 
 
 
+
+
+
+
+
+
+
+
           talkedRecently.delete(msg.author.id);
+
+
+
+
 
 
 
@@ -262,11 +522,23 @@ talkedRecently.add(msg.author.id);
 
 
 
+
+
+
+
         }, 7200000);
 
 
 
+
+
+
+
             
+
+
+
+
 
 
 
@@ -278,9 +550,45 @@ talkedRecently.add(msg.author.id);
 
 
 
+
+
+
+
+
+
+
+
 } 
 
+
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -314,7 +622,19 @@ client.on('message', msg => {
 
 
 
+
+
+
+
+
+
+
+
 if(msg.content === prefix + 'loto') {
+
+
+
+
 
 
 
@@ -334,7 +654,27 @@ if(msg.content === prefix + 'loto') {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      let embed = new Discord.RichEmbed() 
+
+
+
+
 
 
 
@@ -346,7 +686,19 @@ if(msg.content === prefix + 'loto') {
 
 
 
+
+
+
+
+
+
+
+
 .addField("Loto Tercihinizi Yapın:",
+
+
+
+
 
 
 
@@ -354,7 +706,15 @@ if(msg.content === prefix + 'loto') {
 
 
 
+
+
+
+
   .setDescription("Tahmininizi fb!loto-tahmini 'tahmin' şeklinde yazın. (Örneğin; fb!loto-tahmini 5) Loto her gün güncellenir. Günde 1 tahmin yapınız.")
+
+
+
+
 
 
 
@@ -362,11 +722,35 @@ if(msg.content === prefix + 'loto') {
 
 
 
+
+
+
+
 msg.channel.send({embed: embed})	
 
 
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -390,9 +774,51 @@ msg.channel.send({embed: embed})
 
 
 
-const talkedRecently = new Set();
+
+
+
+
+
+
+
+
+
+
+
 
 client.on('message', msg => { 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -427,30 +853,41 @@ client.on('message', msg => {
 if(msg.content === prefix + 'loto-tahmini 3') { 
 
 
+
+
+
  msg.channel.bulkDelete(2)
 
 
-if (talkedRecently.has(msg.author.id)) {
 
 
 
-             let embed = new Discord.RichEmbed() 
 
 
 
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 
 
 
-              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
 
 
 
-       msg.channel.send({embed: embed})	
 
 
 
-      } else {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -476,6 +913,38 @@ if (talkedRecently.has(msg.author.id)) {
 
 
 let embed = new Discord.RichEmbed()  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -539,7 +1008,71 @@ let embed = new Discord.RichEmbed()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .addField("Tebrikler " + msg.author.username + "!", 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -603,15 +1136,42 @@ let embed = new Discord.RichEmbed()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 msg.channel.send({embed: embed})  
 
 
 
-talkedRecently.add(msg.author.id);
-
-
-
-        setTimeout(() => {
 
 
 
@@ -619,23 +1179,33 @@ talkedRecently.add(msg.author.id);
 
 
 
-          talkedRecently.delete(msg.author.id);
 
 
 
-                    
 
 
 
-        }, 7200000);
 
 
 
-            
 
 
 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -696,7 +1266,57 @@ talkedRecently.add(msg.author.id);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
