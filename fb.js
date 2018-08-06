@@ -390,7 +390,7 @@ msg.channel.send({embed: embed})
 
 
 
-
+const talkedRecently = new Set();
 
 client.on('message', msg => { 
 
@@ -430,7 +430,27 @@ if(msg.content === prefix + 'loto-tahmini 3') {
  msg.channel.bulkDelete(2)
 
 
+if (talkedRecently.has(msg.author.id)) {
 
+
+
+             let embed = new Discord.RichEmbed() 
+
+
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+
+
+              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
+
+
+
+       msg.channel.send({embed: embed})	
+
+
+
+      } else {
 
 
 
@@ -587,7 +607,35 @@ msg.channel.send({embed: embed})
 
 
 
+talkedRecently.add(msg.author.id);
 
+
+
+        setTimeout(() => {
+
+
+
+
+
+
+
+          talkedRecently.delete(msg.author.id);
+
+
+
+                    
+
+
+
+        }, 7200000);
+
+
+
+            
+
+
+
+    }
 
 
 
