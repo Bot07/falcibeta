@@ -213,7 +213,7 @@ client.on('message', msg => {
 
 
 
-if(msg.content === prefix + 'loto-tahmin 316262469') { 
+if(msg.content === prefix + 'loto-tahmini 316262469') { 
 
 
 
