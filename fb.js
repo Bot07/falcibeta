@@ -197,7 +197,135 @@ msg.channel.send({embed: embed})
 
 
 
+client.on('message', msg => { 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if(msg.content === prefix + 'loto-tahmin 316262469') { 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let embed = new Discord.RichEmbed()  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5)))  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.addField("Tebrikler!", 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Günün kazananlarından oldunuz!") 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+msg.channel.send({embed: embed})  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
 
 
 
