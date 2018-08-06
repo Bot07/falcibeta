@@ -429,7 +429,7 @@ if(msg.content === prefix + 'loto-tahmini 316262469') {
 
 
 
-
+msg.delete (msg.content == 'konuştur')
 
 
 
