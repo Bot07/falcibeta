@@ -429,7 +429,6 @@ if(msg.content === prefix + 'loto-tahmini 316262469') {
 
 
 
-msg.delete (msg.content == 'konuştur')
 
 
 
@@ -589,6 +588,7 @@ msg.channel.send({embed: embed})
 
 
 
+msg.delete (msg.content == 'konuştur')
 
 
 
