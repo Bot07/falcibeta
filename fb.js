@@ -73,75 +73,6 @@ client.on("ready", () => {client.user.setGame('fb!loto | Yapım Aşamasında' , 
 
 
 
-const talkedRecently = new Set();
-
-client.on('message', msg => {
-
-
-
-
-
-if (msg.content.toLowerCase().match(/(fb!loto-tahmini)/g)) {
-
-            
-
-if (talkedRecently.has(msg.author.id)) {
-
-             let embed = new Discord.RichEmbed() 
-
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-
-              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
-
-       msg.channel.send({embed: embed})	
-
-      } else {
-
-
-
-
-
-
-
-
-
-     let embed = new Discord.RichEmbed() 
-
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-
-
-
-.addField("Kaybettiniz!",
-
-          "12 Saat sonra tekrar deneyin!")
-
-
-                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
-
-msg.channel.send({embed: embed})	
-
-
-
-talkedRecently.add(msg.author.id);
-
-        setTimeout(() => {
-
-
-
-          talkedRecently.delete(msg.author.id);
-
-                    
-
-        }, 7200000);
-
-            
-
-    }
-
-
-
-} 
-});
 
 
 
@@ -213,7 +144,7 @@ client.on('message', msg => {
 
 
 
-if(msg.content === prefix + 'loto-tahmini 316262469') { 
+if(msg.content === prefix + 'loto-tahmini 3') { 
 
 
 
@@ -328,10 +259,286 @@ msg.channel.send({embed: embed})
 });
 
 
+const talkedRecently = new Set();
+
+client.on('message', msg => {
 
 
 
 
+
+if (msg.content.toLowerCase().match(/(fb!loto-tahmini 1)/g)) {
+
+            
+
+if (talkedRecently.has(msg.author.id)) {
+
+             let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
+
+       msg.channel.send({embed: embed})	
+
+      } else {
+
+
+
+
+
+
+
+
+
+     let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+
+
+.addField("Kaybettiniz!",
+
+          "12 Saat sonra tekrar deneyin!")
+
+
+                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+
+msg.channel.send({embed: embed})	
+
+
+
+talkedRecently.add(msg.author.id);
+
+        setTimeout(() => {
+
+
+
+          talkedRecently.delete(msg.author.id);
+
+                    
+
+        }, 7200000);
+
+            
+
+    }
+
+
+
+} 
+});
+
+
+
+const talkedRecently = new Set();
+
+client.on('message', msg => {
+
+
+
+
+
+if (msg.content.toLowerCase().match(/(fb!loto-tahmini 2)/g)) {
+
+            
+
+if (talkedRecently.has(msg.author.id)) {
+
+             let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
+
+       msg.channel.send({embed: embed})	
+
+      } else {
+
+
+
+
+
+
+
+
+
+     let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+
+
+.addField("Kaybettiniz!",
+
+          "12 Saat sonra tekrar deneyin!")
+
+
+                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+
+msg.channel.send({embed: embed})	
+
+
+
+talkedRecently.add(msg.author.id);
+
+        setTimeout(() => {
+
+
+
+          talkedRecently.delete(msg.author.id);
+
+                    
+
+        }, 7200000);
+
+            
+
+    }
+
+
+
+} 
+});
+
+const talkedRecently = new Set();
+
+client.on('message', msg => {
+
+
+
+
+
+if (msg.content.toLowerCase().match(/(fb!loto-tahmini 4)/g)) {
+
+            
+
+if (talkedRecently.has(msg.author.id)) {
+
+             let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
+
+       msg.channel.send({embed: embed})	
+
+      } else {
+
+
+
+
+
+
+
+
+
+     let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+
+
+.addField("Kaybettiniz!",
+
+          "12 Saat sonra tekrar deneyin!")
+
+
+                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+
+msg.channel.send({embed: embed})	
+
+
+
+talkedRecently.add(msg.author.id);
+
+        setTimeout(() => {
+
+
+
+          talkedRecently.delete(msg.author.id);
+
+                    
+
+        }, 7200000);
+
+            
+
+    }
+
+
+
+} 
+});
+const talkedRecently = new Set();
+
+client.on('message', msg => {
+
+
+
+
+
+if (msg.content.toLowerCase().match(/(fb!loto-tahmini 5)/g)) {
+
+            
+
+if (talkedRecently.has(msg.author.id)) {
+
+             let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+              .setDescription("Bu komutu 12 saat sonra kullanabilirsin!");
+
+       msg.channel.send({embed: embed})	
+
+      } else {
+
+
+
+
+
+
+
+
+
+     let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+
+
+.addField("Kaybettiniz!",
+
+          "12 Saat sonra tekrar deneyin!")
+
+
+                .setFooter("Falcı kumar oynamanızı önermez. Bu bir oyundur gerçek para kazanamazsınız eğlence amaçlıdır.")
+
+msg.channel.send({embed: embed})	
+
+
+
+talkedRecently.add(msg.author.id);
+
+        setTimeout(() => {
+
+
+
+          talkedRecently.delete(msg.author.id);
+
+                    
+
+        }, 7200000);
+
+            
+
+    }
+
+
+
+} 
+});
 
 
 client.login(process.env.BOT_TOKEN)
