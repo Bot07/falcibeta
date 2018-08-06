@@ -354,7 +354,7 @@ if(msg.content === prefix + 'loto') {
 
 
 
-  .setDescription("Tahmininizi fb!loto-tahmini 'tahmin' şeklinde yazın. Loto her gün güncellenir. Günde 1 tahmin yapınız.")
+  .setDescription("Tahmininizi fb!loto-tahmini 'tahmin' şeklinde yazın. (Örneğin; fb!loto-tahmini 5) Loto her gün güncellenir. Günde 1 tahmin yapınız.")
 
 
 
@@ -424,7 +424,7 @@ client.on('message', msg => {
 
 
 
-if(msg.content === prefix + 'loto-tahmini 316262469') { 
+if(msg.content === prefix + 'loto-tahmini 3') { 
 
 
  msg.channel.bulkDelete(2)
@@ -519,7 +519,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-.addField("Tebrikler!", 
+.addField("Tebrikler " msg.author.username "!", 
 
 
 
@@ -551,7 +551,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"Günün kazananlarından oldunuz!") 
+"Günün kazananlarından oldun!") 
 
 
 
