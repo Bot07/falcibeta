@@ -519,7 +519,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-.addField("Tebrikler " msg.author.username "!", 
+.addField("Tebrikler " + msg.author.username + "!", 
 
 
 
